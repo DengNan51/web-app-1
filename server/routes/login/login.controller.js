@@ -21,6 +21,7 @@ const register = async function (req, res) {
 }
 
 const find = async function (req, res) {
+    console.log('info', 'start-find')
     LoginRouter.find({
         username: '1',
     }).then(value => {
