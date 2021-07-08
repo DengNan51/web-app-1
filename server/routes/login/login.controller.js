@@ -1,4 +1,5 @@
 var LoginRouter = require('../../model');
+const admin = require('tcb-admin-node')
 
 const register = async function (req, res) {
     console.log(process.env.DB_PASS);
@@ -22,6 +23,7 @@ const register = async function (req, res) {
 
 const find = async function (req, res) {
     console.log('start-find')
+    admin.logger().log({content: "start-find"})
     LoginRouter.find({
         username: '1',
     }).then(value => {
