@@ -19,7 +19,7 @@ const register = async function (req, res) {
             })
         }
     })
-}
+} 
 
 const find = async function (req, res) {
     console.log('start-find')
